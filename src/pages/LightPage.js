@@ -1,5 +1,5 @@
 import React from 'react';
-import Sensor from './Sensor';
+import Chart from './Chart';
 import Header from './Header';
 import './style.css';
 
@@ -7,7 +7,7 @@ const LightPage = () => {
   return (
     <div>
       <Header title="Рівент освітлення" />
-      <Sensor category="Рівень освітлення" />;
+      <Chart category="Рівень освітлення" />;
     </div>
   );
  

@@ -1,5 +1,5 @@
 import React from 'react';
-import Sensor from './Sensor';
+import Chart from './Chart';
 import Header from './Header';
 import './style.css';
 
@@ -7,7 +7,7 @@ const HumidityPage = () => {
     return (
     <div>
       <Header title="Вологість" />
-      <Sensor category="Вологість" />;
+      <Chart category="Вологість" />;
     </div>
   );
 };
