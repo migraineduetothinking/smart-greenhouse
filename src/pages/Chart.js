@@ -10,7 +10,7 @@ const Chart = ({ category, startDate, endDate }) => {
   const chartData = [
     {
       x: dateArray.map((date) => format(date, 'yyyy-MM-dd')), // Форматуємо дати в строку
-      y: [0, 15, 13, 17], // Приклад значень
+      y: [0, 15, 13, 17, 13,12,12,11,1,14,15,11,7,4,12,18], // Приклад значень
       type: 'scatter',
       mode: 'lines+markers',
       marker: { color: 'blue' },
@@ -20,12 +20,12 @@ const Chart = ({ category, startDate, endDate }) => {
   //layout 
   const chartLayout = {
     title: ` ${category}  `,
-    
     xaxis: {
       title: 'Дата',
       zeroline: false,
       tickangle: 35, // Поворот значень на 45 градусів
       tickformat: '%d/%m/%Y %H:%M:%S',
+      tickmode: 'array', tickvals: dateArray.map((date) => format(date, 'yyyy-MM-dd')) 
     }, 
     yaxis: { title: category, zeroline: false,rangemode: 'tozero'  },
     width: 1200, 
