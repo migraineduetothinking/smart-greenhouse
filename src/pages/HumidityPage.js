@@ -1,13 +1,18 @@
-import React from 'react';
-import Chart from './Chart';
+import React, { useState } from 'react';
+import Chart from '../functions/Chart';
 import Header from './Header';
 import './style.css';
+import ExcelReader from '../functions/ExcelReader';
 
 const HumidityPage = () => {
-    return (
+  
+
+  return (
     <div>
       <Header title="Вологість" />
-      <Chart category="Вологість" />;
+      <ExcelReader />
+      {/* <Chart category="Вологість" startDate={startDate} endDate={endDate} /> */}
+
     </div>
   );
 };

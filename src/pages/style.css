@@ -69,3 +69,22 @@ body {
    padding: 20px; /* Додатковий відступ для кращого вигляду */
  }
 
+ .custom-date-picker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.custom-date-picker label {
+  font-weight: bold;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.custom-date-picker .custom-select {
+  width: 150px; /* Adjust the width as needed */
+  margin-right: 10px;
+}

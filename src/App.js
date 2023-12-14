@@ -5,12 +5,12 @@ import TemperaturePage from './pages/TemperaturePage';
 import HumidityPage from './pages/HumidityPage';
 import CO2Page from './pages/CO2Page';
 import LightPage from './pages/LightPage';
-import { Provider } from 'react-redux';
-import store from './redux/store';
+;
+
 
 const App = () => {
   return (
-    <Provider store={store}>
+    
       <Router>
         <div>
           <Routes>
@@ -22,7 +22,7 @@ const App = () => {
           </Routes>
         </div>
       </Router>
-    </Provider>
+    
   );
 };
 

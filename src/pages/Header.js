@@ -63,7 +63,7 @@ const Header = ({ title, onDateChange }) => {
     <Link to="/" className="link">
       <h1>{title}</h1>
     </Link>
-    <div>
+    {/* <div>
         <button onClick={handleDateButtonClick}>
           {startDate.toDateString() === endDate.toDateString()
             ? formatDate(startDate)
@@ -71,7 +71,7 @@ const Header = ({ title, onDateChange }) => {
         </button>
         {isDatePickerOpen && (
           <div className="date-picker-menu">
-            {/* Календар для вибору лівої дати */}
+            {/* Календар для вибору лівої дати }
             <DatePicker
               selected={startDate}
               onChange={(date) => setStartDate(date)}
@@ -79,7 +79,7 @@ const Header = ({ title, onDateChange }) => {
               locale={uk}
               maxDate={new Date()} 
             />
-            {/* Календар для вибору правої дати */}
+            {/* Календар для вибору правої дати }
             <DatePicker
               selected={endDate}
               onChange={(date) => setEndDate(date)}
@@ -88,7 +88,7 @@ const Header = ({ title, onDateChange }) => {
               maxDate={new Date()} 
             />
             <button onClick={handleCancelButtonClick}>Скасувати</button>
-            {/* Підтвердження вибору дати з блокуванням кнопки при помилковому виборі */}
+            {/* Підтвердження вибору дати з блокуванням кнопки при помилковому виборі }
             <button
               onClick={handleConfirmButtonClick}
               disabled={endDate < startDate}
@@ -97,7 +97,7 @@ const Header = ({ title, onDateChange }) => {
             </button>
           </div>
         )}
-      </div>
+      </div> */}
     </header>
   );
 };

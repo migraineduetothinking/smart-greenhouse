@@ -1,13 +1,17 @@
-import React from 'react';
-import Chart from './Chart';
+import React, { useState } from 'react';
+import Chart from '../functions/Chart';
 import Header from './Header';
 import './style.css';
+import ExcelReader from '../functions/ExcelReader';
 
 const LightPage = () => {
+  
   return (
     <div>
-      <Header title="Рівент освітлення" />
-      <Chart category="Рівень освітлення" />;
+      <Header title="Рівень Освітлення"  />
+      <ExcelReader />
+      {/* <Chart category="Рівень Освітлення" startDate={startDate} endDate={endDate} /> */}
+
     </div>
   );
  
