@@ -66,16 +66,17 @@ body {
    max-width: 1240px; /* Максимальна ширина графіків */
    max-height: 600px;
    margin: 0 auto; /* Автоматичний відступ зліва і справа для центрування */
-   padding: 20px; /* Додатковий відступ для кращого вигляду */
+   padding: 20px; 
+   padding-top: 2px; 
  }
-
  .custom-date-picker {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 10px;
+  margin-bottom: 10px;
   padding: 10px;
   border-radius: 5px;
+  flex-wrap: wrap;
 }
 
 .custom-date-picker label {
@@ -85,6 +86,15 @@ body {
 }
 
 .custom-date-picker .custom-select {
-  width: 150px; /* Adjust the width as needed */
+  width: 150px;
   margin-right: 10px;
+}
+
+.date-error {
+  color: #ff3333;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  white-space: pre-line;
+  width: 100%;
+  text-align: center;
 }
