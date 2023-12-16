@@ -1,12 +1,10 @@
-
 import * as XLSX from 'xlsx';
 
-export const readExcelFile = (file) => {
+export const readExcelFile = (file, sheetName) => {
   return new Promise((resolve) => {
     const reader = new FileReader();
     reader.onload = (e) => {
       const workbook = XLSX.read(e.target.result, { type: 'binary' });
-      const sheetName = workbook.SheetNames[0];
       const worksheet = workbook.Sheets[sheetName];
 
       const category = [];
@@ -16,7 +14,7 @@ export const readExcelFile = (file) => {
       let startReading = false;
 
       for (const cell in worksheet) {
-        // Skip the first two rows
+        // Skip the first  row
         if (cell[1] === '2') {
           startReading = true;
         }

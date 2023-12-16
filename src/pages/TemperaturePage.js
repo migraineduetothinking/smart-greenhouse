@@ -1,17 +1,13 @@
-import React, { useState } from 'react';
-import Chart from '../functions/Chart';
+// TemperaturePage.js
+import React from 'react';
 import Header from './Header';
-import './style.css';
 import ExcelReader from '../functions/ExcelReader';
 
 const TemperaturePage = () => {
-
-    
   return (
     <div>
-      <Header title="Температура"  />
-      <ExcelReader />
-      {/* ///<Chart category="Температура" startDate={startDate} endDate={endDate}/> */}
+      <Header title="Температура" />
+      <ExcelReader sheetName="Temperature" />
     </div>
   );
 };

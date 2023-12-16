@@ -9,7 +9,7 @@ const LightPage = () => {
   return (
     <div>
       <Header title="Рівень Освітлення"  />
-      <ExcelReader />
+      <ExcelReader sheetName="Light level" />
       {/* <Chart category="Рівень Освітлення" startDate={startDate} endDate={endDate} /> */}
 
     </div>

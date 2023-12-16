@@ -10,7 +10,7 @@ const HumidityPage = () => {
   return (
     <div>
       <Header title="Вологість" />
-      <ExcelReader />
+      <ExcelReader sheetName="Humidity" />
       {/* <Chart category="Вологість" startDate={startDate} endDate={endDate} /> */}
 
     </div>

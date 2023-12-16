@@ -10,7 +10,7 @@ const CO2Page = () => {
   return (
     <div>
       <Header title="Рівень СО2" />
-      <ExcelReader />
+      <ExcelReader sheetName="CO2 level" />
       {/* <Chart category="Вологість" startDate={startDate} endDate={endDate} /> */}
 
     </div>

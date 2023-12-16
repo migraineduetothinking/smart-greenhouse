@@ -1,10 +1,10 @@
-//ExcelReader
+// ExcelReader.js
 import React, { useState, useEffect } from 'react';
 import { readExcelFile } from './excelUtils';
 import Chart from './Chart';
 import DatePicker from './DatePicker';
 
-const ExcelReader = () => {
+const ExcelReader = ({ sheetName }) => {
   const [data, setData] = useState({});
   const [startDate, setStartDate] = useState(null);
   const [endDate, setEndDate] = useState(null);
@@ -14,7 +14,7 @@ const ExcelReader = () => {
     const file = e.target.files[0];
 
     if (file) {
-      const { category, date } = await readExcelFile(file);
+      const { category, date } = await readExcelFile(file, sheetName);
       setData({ category, date });
 
       // Extract unique dates with corresponding data
