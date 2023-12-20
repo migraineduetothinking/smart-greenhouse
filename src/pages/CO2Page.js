@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Chart from '../functions/Chart';
 import Header from './Header';
 import './style.css';
-import ExcelReader from '../functions/ExcelReader';
+import DBReader from '../functions/DBReader';
 
 const CO2Page = () => {
   
@@ -10,7 +10,7 @@ const CO2Page = () => {
   return (
     <div>
       <Header title="Рівень СО2" />
-      <ExcelReader sheetName="CO2 level" />
+      <DBReader tableName="co2_level" />
       {/* <Chart category="Вологість" startDate={startDate} endDate={endDate} /> */}
 
     </div>
