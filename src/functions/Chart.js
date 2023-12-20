@@ -76,7 +76,7 @@ const Chart = ({ category, date }) => {
         y: minValue - 0.06 * (maxValue - minValue), // Adjust the multiplier as needed
         xref: 'paper',
         yref: 'y',
-        text: `Min: ${roundedMinValue}`,
+        text: `Мінімальне значення: ${roundedMinValue}`,
         showarrow: false,
         font: {
           color: 'red',
@@ -87,7 +87,7 @@ const Chart = ({ category, date }) => {
         y: maxValue + 0.06 * (maxValue - minValue), // Adjust the multiplier as needed
         xref: 'paper',
         yref: 'y',
-        text: `Max: ${roundedMaxValue}`,
+        text: `Максимальне значення: ${roundedMaxValue}`,
         showarrow: false,
         font: {
           color: 'red',
